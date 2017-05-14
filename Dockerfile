@@ -9,6 +9,6 @@ RUN clean_install.sh --no-install-recommends \
 # Config nginx service
 ADD bin/service /etc/service
 
-EXPOSE 80 443
+
 
 WORKDIR /u/apps

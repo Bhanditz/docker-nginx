@@ -1,5 +1,3 @@
-#!/bin/bash
-
-echo "Starting nginx"
-
-exec /usr/sbin/nginx
+#!/bin/sh
+exec 2>&1
+exec service nginx start 2>&1 > /dev/null
